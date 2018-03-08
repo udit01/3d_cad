@@ -1,6 +1,7 @@
 docs/
 other/
 build/
+doc/
 
 # Prerequisites
 *.d

@@ -3,41 +3,36 @@
 * Will be used in Line and Point class to perform different operations.
 *
 *************************/
-
-
-/// Class to define the direction cosines in 3d space
-class DirectionCosines
-{
-public:
+#include <bool>
+#include <float>
+#include <string>
+#include "DirectionCosines.hpp"
+#include "Graph.hpp"
+#include "Line.hpp"
+#include "Model3d.hpp"
+#include "OrthographicViews.hpp"
+#include "Plane.hpp"
+#include "Point.hpp"
+#include "Projection.hpp"
 
 	/// Class might be initialized with direction cosines or ratios, to make it inclusive of both.
-	DirectionCosine(float a, float b, float c){
+	DirectionCosines::DirectionCosine(float a, float b, float c){
 		
 	}
 
-	~DirectionCosines() {
+	DirectionCosines::~DirectionCosines() {
 
 	}
 
-	/// cosine of the angle made by the line/segment with the x-axis
-	float xl;
-	/// cosine of the angle made by the line/segment with the y-axis
-	float yl;
-	/// cosine of the angle made by the line/segment with the z-axis
-	float zl;
 
-
-	float dotProduct(DirectionCosine l)
+	float DirectionCosines::dotProduct(DirectionCosine l)
 	{
 
 	}
 
-	DirectionCosine crossProduct(DirectionCosine l)
+	DirectionCosines DirectionCosines::crossProduct(DirectionCosine l)
 	{
 
 	}
 
-private:
-
-};
 

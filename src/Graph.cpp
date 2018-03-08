@@ -2,57 +2,59 @@
 * Implementation of Graph Abstract Data Type
 *
 *************************/
-
-/// A Graph Class to model a 3D or a 2D view. Determine whether to use an Adjcancey List or Adjanceny Matrix representation
-class Graph
-{
-public:
-	/// the abstract Node data member that describes the corners/vertices of the View
-	list<Point> Node;
-	/// the abstract EdgeSet data member that describes the solid/dashed edges of the View
-	list<Line> EdgeSet;
+#include <bool>
+#include <float>
+#include <string>
+#include "DirectionCosines.hpp"
+#include "Graph.hpp"
+#include "Line.hpp"
+#include "Model3d.hpp"
+#include "OrthographicViews.hpp"
+#include "Plane.hpp"
+#include "Point.hpp"
+#include "Projection.hpp"
 
 	///Constructor for Graph object
-	Graph() {
+	Graph::Graph() {
 
 	}
 	///Destructor for Graph object
-	~Graph() {
+	Graph::~Graph() {
 
 	}
 
 	/// Returns True if it contains the specified Node else False
-	bool containsNode(Point P){
+	bool Graph::containsNode(Point P){
 
 	}
 
 	/// Returns True if it contains the specified Node else False
-	bool containsEdge(Line E){
+	bool Graph::containsEdge(Line E){
 
 	}
 
 	/// adds a node to the Graph
-	void addNode(Point P){
+	void Graph::addNode(Point P){
 
 	}
 
 	/// adds an edge to the Graph
-	void addEdge(Line E){
+	void Graph::addEdge(Line E){
 
 	}
 
 	/// updates a Node in the Graph
-	void updateNode(Point P1, Point P2){
+	void Graph::updateNode(Point P1, Point P2){
 
 	}
 
 	/// deletes a node from the Graph
-	void deleteNode(Point P){
+	void Graph::deleteNode(Point P){
 
 	}
 
 	/// deletes an edge from the Graph
-	void deleteEdge(Edge E){
+	void Graph::deleteEdge(Edge E){
 
 	}
 

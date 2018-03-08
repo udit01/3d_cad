@@ -2,85 +2,85 @@
 *  Implementation of 2D/3D Line Abstract Data Type
 *
 *************************/
-
-/// A Class to define a line in the space 2D/3D
-class Line
-{
-	//Keep Edge if usefull to seperate the 2D/3D usecases.
-
-public:
-	/// the direction cosines of the line
-	DirectionCosine l;
-	/// a point that lies on theline to fix it to a location in the space
-	Point p;
+#include <bool>
+#include <float>
+#include <string>
+#include "DirectionCosines.hpp"
+#include "Graph.hpp"
+#include "Line.hpp"
+#include "Model3d.hpp"
+#include "OrthographicViews.hpp"
+#include "Plane.hpp"
+#include "Point.hpp"
+#include "Projection.hpp"
 
 	///Constructor for line of the form of direction cosines and a point
-	Line(DirectionCosines dc, Point p) {
+	Line::Line(DirectionCosines dc, Point p) {
 
 	}
 
 	///Constructor for line of the form of two points p1, p2
-	Line(Point p1, Point p2) {
+	Line::Line(Point p1, Point p2) {
 
 	}
 
 	///Destructor for line object
-	~Line() {
+	Line::~Line() {
 
 	}
 
 	/// Returns True when line is parallel to given line
-	bool isParallel(Line L){
+	bool Line::isParallel(Line L){
 
 	}
 
 	/// Returns True when line is perpendicular to given line
-	bool isPerpendicular(Line L){
+	bool Line::isPerpendicular(Line L){
 
 	}
 
 	/// Returns angle made with given Line 
-	float angleWithLine(Line L){
+	float Line::angleWithLine(Line L){
 
 	}
 
 	/// Returns angle made with given Plane
-	float angleWithPlane(Plane P){
+	float Line::angleWithPlane(Plane P){
 
 	}
 
 	/// Returns projection of line on the given Plane
-	Line projectionOnPlane(Plane P){
+	Line Line::projectionOnPlane(Plane P){
 
 	}
 
 	/// Returns image of line in the given Plane
-	Line imageInPlane(Plane P){
+	Line Line::imageInPlane(Plane P){
 
 	}
 
 	/// Returns True if line lies in the given Plane
-	bool liesInPlane(Plane P){
+	bool Line::liesInPlane(Plane P){
 
 	}
 
 	/// Returns True if line intersect with the given Line
-	bool intersects(Line L){
+	bool Line::intersects(Line L){
 
 	}
 
 	/// Returns the Point of intersection of the two lines, null if they don't intersect
-	Point pointOfIntersection(Line L){
+	Point Line::pointOfIntersection(Line L){
 
 	}
 
 	/// Returns the Point of intersection of line and the given Plane
-	Point pointOfIntersection(Plane P){
+	Point Line::pointOfIntersection(Plane P){
 
 	}
 
 	/// Returns the line of shortest distance of two skew lines, null if they intersect
-	Line lineOfShortestDistance(Line L){
+	Line Line::lineOfShortestDistance(Line L){
 
 	}
 };

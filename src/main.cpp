@@ -7,9 +7,7 @@
 #include <math.h>
 #include <list>
 #include <glut.h>
-#include "file_interface.cpp"
-#include "gui.cpp"
-#include "shaders.cpp"
+#include 
 
 using namespace std;
 
